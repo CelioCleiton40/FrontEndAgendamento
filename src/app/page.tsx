@@ -4,6 +4,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import CalendarPicker from '../components/Calendar_My/CalendarPicker'
 import Footer from '@/components/Footer/footer'
+import PricingComponent from '@/components/Pricing/PricingComponent'
 
 const MotionDiv = dynamic(
   () => import('framer-motion').then((mod) => mod.motion.div),
@@ -60,6 +61,7 @@ export default function Home() {
           </MotionDiv>
         )}
       </header>
+      <PricingComponent />
       <Footer />
     </div>
   )
